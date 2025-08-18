@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","12","test_get_vets","tests_api","Mon Aug 18 19:23:31 EDT 2025","passed","Mon Aug 18 19:23:31 EDT 2025","","test_vets_api","",""
+"","23","test_get_owners","tests_api","Mon Aug 18 19:23:31 EDT 2025","passed","Mon Aug 18 19:23:31 EDT 2025","","test_owners_api","",""
+"","8","test_add_owner","tests_api","Mon Aug 18 19:23:31 EDT 2025","passed","Mon Aug 18 19:23:31 EDT 2025","","test_owners_api","",""
+"","6","test_add_vet","tests_api","Mon Aug 18 19:23:31 EDT 2025","passed","Mon Aug 18 19:23:31 EDT 2025","","test_vets_api","",""

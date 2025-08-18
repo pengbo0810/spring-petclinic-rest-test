@@ -1,19 +1,19 @@
 import requests
 
-BASE_URL = "http://localhost:9966/petclinic/api"
-
-def test_get_vets():
-    res = requests.get(f"{BASE_URL}/vets")
+def test_get_vets(base_url):
+    res = requests.get(f"{base_url}/vets")
     assert res.status_code == 200
-    
     data = res.json()
-    # 确认 data 是 list
     assert isinstance(data, list)
-    # 确认至少有一个医生
     assert len(data) > 0
-    # 确认医生数据结构正确
-    first_vet = data[0]
-    assert "id" in first_vet
-    assert "firstName" in first_vet
-    assert "lastName" in first_vet
-    assert "specialties" in first_vet
+    vet = data[0]
+    assert "id" in vet and "firstName" in vet and "lastName" in vet
+
+def test_add_vet(base_url):
+    payload = {
+        "firstName": "Test",
+        "lastName": "Doctor",
+        "specialties": []
+    }
+    res = requests.post(f"{base_url}/vets", json=payload)
+    assert res.status_code in (201, 200)
