@@ -1,0 +1,12 @@
+{
+  "method": "POST",
+  "url": "http://localhost:9966/petclinic/api/vets",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "",
+    "lastName": "Auto Bad",
+    "specialties": []
+  }
+}

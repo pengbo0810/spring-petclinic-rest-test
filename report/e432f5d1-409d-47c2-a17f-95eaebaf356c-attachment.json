@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "http://localhost:9966/petclinic/api/visits",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "date": "",
+    "description": "Empty date",
+    "pet": {
+      "id": 1
+    }
+  }
+}

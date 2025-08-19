@@ -1,0 +1,24 @@
+{
+  "status_code": 400,
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/problem+json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 19 Aug 2025 04:05:13 GMT",
+    "Connection": "close"
+  },
+  "body": {
+    "type": "http://localhost:9966/petclinic/api/owners",
+    "title": "MethodArgumentNotValidException",
+    "status": 400,
+    "detail": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.rest.dto.OwnerDto> org.springframework.samples.petclinic.rest.controller.OwnerRestController.addOwner(org.springframework.samples.petclinic.rest.dto.OwnerFieldsDto): [Field error in object 'ownerFieldsDto' on field 'city': rejected value []; codes [Size.ownerFieldsDto.city,Size.city,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ownerFieldsDto.city,city]; arguments []; default message [city],80,1]; default message [个数必须在1和80之间]] ",
+    "instance": "/petclinic/api/owners",
+    "timestamp": "2025-08-19T04:05:13.210133200Z"
+  }
+}

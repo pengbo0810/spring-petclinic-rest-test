@@ -1,0 +1,24 @@
+{
+  "status_code": 400,
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/problem+json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 19 Aug 2025 04:06:10 GMT",
+    "Connection": "close"
+  },
+  "body": {
+    "type": "http://localhost:9966/petclinic/api/owners",
+    "title": "MethodArgumentNotValidException",
+    "status": 400,
+    "detail": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.rest.dto.OwnerDto> org.springframework.samples.petclinic.rest.controller.OwnerRestController.addOwner(org.springframework.samples.petclinic.rest.dto.OwnerFieldsDto) with 2 errors: [Field error in object 'ownerFieldsDto' on field 'firstName': rejected value []; codes [Pattern.ownerFieldsDto.firstName,Pattern.firstName,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ownerFieldsDto.firstName,firstName]; arguments []; default message [firstName],[Ljakarta.validation.constraints.Pattern$Flag;@37538a44,^[\\p{L}]+([ '-][\\p{L}]+){0,2}$]; default message [需要匹配正则表达式\"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\"]] [Field error in object 'ownerFieldsDto' on field 'firstName': rejected value []; codes [Size.ownerFieldsDto.firstName,Size.firstName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ownerFieldsDto.firstName,firstName]; arguments []; default message [firstName],30,1]; default message [个数必须在1和30之间]] ",
+    "instance": "/petclinic/api/owners",
+    "timestamp": "2025-08-19T04:06:10.554647100Z"
+  }
+}

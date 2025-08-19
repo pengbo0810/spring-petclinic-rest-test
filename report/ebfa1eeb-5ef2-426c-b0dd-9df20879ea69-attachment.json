@@ -1,0 +1,24 @@
+{
+  "status_code": 400,
+  "headers": {
+    "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "DENY",
+    "Content-Type": "application/problem+json",
+    "Transfer-Encoding": "chunked",
+    "Date": "Tue, 19 Aug 2025 04:05:13 GMT",
+    "Connection": "close"
+  },
+  "body": {
+    "type": "http://localhost:9966/petclinic/api/visits",
+    "title": "MethodArgumentNotValidException",
+    "status": 400,
+    "detail": "Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.springframework.samples.petclinic.rest.dto.VisitDto> org.springframework.samples.petclinic.rest.controller.VisitRestController.addVisit(org.springframework.samples.petclinic.rest.dto.VisitDto) with 2 errors: [Field error in object 'visitDto' on field 'description': rejected value []; codes [Size.visitDto.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [visitDto.description,description]; arguments []; default message [description],255,1]; default message [个数必须在1和255之间]] [Field error in object 'visitDto' on field 'petId': rejected value [null]; codes [NotNull.visitDto.petId,NotNull.petId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [visitDto.petId,petId]; arguments []; default message [petId]]; default message [不能为null]] ",
+    "instance": "/petclinic/api/visits",
+    "timestamp": "2025-08-19T04:05:13.580375900Z"
+  }
+}

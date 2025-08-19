@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "http://localhost:9966/petclinic/api/owners",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "1 St",
+    "city": "NY",
+    "telephone": "abc"
+  }
+}
