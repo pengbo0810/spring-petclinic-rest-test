@@ -1,0 +1,14 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","19","test_add_pet","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_pets_api","",""
+"","346","test_bulk_create_20_vets","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_bulk_vets","",""
+"","40","test_add_visit","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_visits_api","",""
+"","4","test_add_vet","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_vets_api","",""
+"","10","test_get_pettypes","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_pets_api","",""
+"","9","test_get_vets","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_vets_api","",""
+"","15","test_add_owner","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_owners_api","",""
+"","36","test_get_owners","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_owners_api","",""
+"","12","test_get_visits","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_visits_api","",""
+"
+    可选清理：删掉 lastName 里包含 'Auto' 的 Vet。
+    如果后端不支持 DELETE /vets/{id}（返回 404/405），直接跳过，不算失败。
+    ","324","test_optional_cleanup_created_vets","src.test.tests_api","Mon Aug 18 23:57:22 EDT 2025","passed","Mon Aug 18 23:57:22 EDT 2025","","test_bulk_vets","",""
